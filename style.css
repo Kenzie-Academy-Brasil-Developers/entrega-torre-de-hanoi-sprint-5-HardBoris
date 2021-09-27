@@ -1,0 +1,40 @@
+body, main, section, div, header, footer {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-size: 16px;
+}
+
+header {
+    width: auto;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    font-size: 4em;
+    text-align: center;
+}
+
+main {
+    width: 90%;
+    height: 80vh;
+}
+
+footer {
+    width: auto;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+}
+
+p {
+    font-size: 1.5em;
+    text-align: center;
+}
