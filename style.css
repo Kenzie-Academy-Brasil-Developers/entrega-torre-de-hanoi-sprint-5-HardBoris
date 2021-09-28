@@ -45,6 +45,13 @@ section {
     align-items: center;
 }
 
+.torres {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
 #contador {
     height: 25%;
 }
@@ -53,6 +60,52 @@ div {
     width: 30%;
     height: 150px;
     border: 2px solid black;
+}
+
+.disk {
+    height: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+#d7 {
+    width: 90%;
+    background-color: black;
+}
+
+#d6 {
+    width: 80%;
+    background-color: brown;
+}
+
+#d5 {
+    width: 70%;
+    background-color: red;
+}
+
+#d4 {
+    width: 60%;
+    background-color: orange;
+}
+
+#d3 {
+    width: 50%;
+    background-color: gold;
+}
+
+#d2 {
+    width: 40%;
+    background-color: greenyellow;
+}
+
+#d1 {
+    width: 30%;
+    background-color: lightseagreen;
+}
+
+#d0 {
+    width: 20%;
+    background-color: #1010ff;
 }
 
 footer {
