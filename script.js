@@ -40,3 +40,17 @@ function prueba(event) {
 const reset = document.getElementById("reinicia");
 
 reset.addEventListener("click", limpaTorre);
+
+
+
+// numero de movimentos minimo
+const movMin = document.getElementById("num_mov2")
+
+movMin.innerHTML = Math.pow(2,dificuldade.value)-1; 
+
+// certficando que o numero de movimentos comece como zero
+let movimentos = 0;
+
+// certificando que o numero exibindo de movimentos tambem seja zero
+document.getElementById("num_mov1").innerHTML = 0;
+

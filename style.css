@@ -107,6 +107,10 @@ div {
     width: 20%;
     background-color: #1010ff;
 }
+.numero_mov {
+    display: inline-block;
+    border: none;
+}
 
 footer {
     width: 100%;
