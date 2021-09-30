@@ -27,6 +27,7 @@ main {
     width: 320px;
     height: 80vh;
     margin: auto;
+    background-color: #E2F2F2;
 }
 
 section {
@@ -35,6 +36,7 @@ section {
 }
 
 #resposta {
+    width: 100%;
     height: 25%;
 }
 
@@ -43,6 +45,7 @@ section {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    
 }
 
 .torres {
@@ -50,20 +53,18 @@ section {
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-}
-
-#contador {
-    height: 25%;
-}
-
-div {
     width: 30%;
-    height: 150px;
+    height: 80%;
     border: 2px solid black;
 }
 
+#contador {
+    width: 100%;
+    height: 25%;
+}
+
 .disk {
-    height: 16px;
+    height: 12%;
     border: none;
     border-radius: 5px;
 }
@@ -95,7 +96,7 @@ div {
 
 #d2 {
     width: 40%;
-    background-color: greenyellow;
+    background-color: rgb(91, 145, 11);
 }
 
 #d1 {
@@ -112,6 +113,22 @@ div {
     border: none;
 }
 
+
+
+span {
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    margin: auto;
+    line-height: 40px;
+    text-align: center;
+    
+}
+
+#reinicia {
+    display: none;
+}
+
 footer {
     width: 100%;
     height: 8vh;
@@ -123,4 +140,23 @@ footer {
 p {
     font-size: 1.5em;
     text-align: center;
+}
+
+@media (min-width : 769px){
+    h1 {
+        font-size: 3em;
+    }
+
+    main {
+        width: 80%;
+    }
+
+    span {
+        font-size: 1.5em;
+    }
+
+    select {
+        font-size: .8em;
+    }
+
 }
