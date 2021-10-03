@@ -3,9 +3,9 @@ const torres = document.getElementsByClassName("torres");
 const discos = [];
 const fichas = [];
 
-const torreA = new Torre("a", true);
-const torreB = new Torre("b", false);
-const torreC = new Torre("c", false);
+// const torreA = new Torre("a", true);
+// const torreB = new Torre("b", false);
+// const torreC = new Torre("c", false);
 
 const fichasA = [];
 const fichasB = [];
@@ -62,16 +62,12 @@ function Disco(i) {
     this.elegida = false;
 }
 
-// function criaDiscos() {
-//     for (let i = 0; i < 8; i++) {
-//         discos[i] = new Disco(i)
-//     }
-//     return discos;
-// }
-
-// function Fichas(str){
-//     this.fichas = [];
-// }
+function criaDiscos() {
+    for (let i = 0; i < 8; i++) {
+        discos[i] = new Disco(i)
+    }
+    return discos;
+}
 
 function Torre(str, inicial){
     this.torre = document.getElementById(str);
