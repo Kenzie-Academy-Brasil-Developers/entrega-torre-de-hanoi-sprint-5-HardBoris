@@ -18,6 +18,8 @@ const torreC = document.createElement("div");
 torreC.className = "torres";
 hanoi.appendChild(torreC);
 
+const torres = document.getElementsByClassName("torres");
+
 const dificultad = document.createElement("div");
 dificultad.className = "guarismos";
 dificultad.id = "nivel";
@@ -35,6 +37,10 @@ seleccion.appendChild(lblDificultad);
 const level = document.createElement("select");
 level.id = "level";
 seleccion.appendChild(level);
+
+const level0 = document.createElement("option");
+level0.innerText = "";
+level.appendChild(level0);
 
 const level1 = document.createElement("option");
 level1.innerText = "1";
@@ -99,7 +105,7 @@ const lblMini = document.createElement("label");
 lblMini.innerText = "Movimentos minimos: ";
 formula.appendChild(lblMini);
 
-const mini = document.createElement("label");
+let mini = document.createElement("label");
 mini.id = "mini";
 mini.innerText = 0;
 formula.appendChild(mini);
