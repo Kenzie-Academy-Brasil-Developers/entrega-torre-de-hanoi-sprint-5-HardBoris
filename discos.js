@@ -26,10 +26,15 @@ function criaFichas() {
 
 criaFichas();
 
+let contenidoA = [];
+let contenidoB = [];
+let contenidoC = [];
+
 function dibujaFichas(n) {
-    for (let i = 0; i < n; i++) {
+    for (let i = n-1; i >= 0; i--) {
         torreA.appendChild(fichas[i]);
     }
+    contenidoA = document.getElementsByClassName("disco");
 }
 
 const ficha1 = fichas[0];
@@ -41,6 +46,8 @@ const ficha6 = fichas[5];
 const ficha7 = fichas[6];
 const ficha8 = fichas[7];
 
+
+
 function limpiaTorre(){
     for (let i = 0; i < torres.length; i++) {
         const element = torres[i];
@@ -49,20 +56,15 @@ function limpiaTorre(){
 }
 
 function movimientosMinimos(n) {
-    let minus = 0;
-    if (n === "") {
-        minus
-    } else {
-        minus = (2**n) - 1;
-    }
-    return minus;
+    return minus = (2**n) - 1;
 }
 
-level.addEventListener("click", prueba);
-function prueba(event) {
+level.addEventListener("click", iniciaJuego);
+function iniciaJuego(event) {
     limpiaTorre();
     let select = event.target;
     let n = level.value
     dibujaFichas(n);
+    contenidoA = document.getElementsByClassName("disco");
     mini.innerText = movimientosMinimos(n);
 }

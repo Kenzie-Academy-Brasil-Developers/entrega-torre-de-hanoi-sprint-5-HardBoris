@@ -3,11 +3,12 @@ const hanoi = document.getElementById("hanoi");
 const contador = document.getElementById("contador");
 
 const mensaje = document.createElement("h2");
-mensaje.innerText = "Você venceu!";
+mensaje.innerText = "";
 resposta.appendChild(mensaje);
 
 const torreA = document.createElement("div");
 torreA.className = "torres";
+torreA.id = "a";
 hanoi.appendChild(torreA);
 
 const torreB = document.createElement("div");
@@ -87,7 +88,7 @@ const lblCount = document.createElement("label");
 lblCount.innerText = "Seus movimentos: ";
 cuenta.appendChild(lblCount);
 
-const count = document.createElement("label");
+let count = document.createElement("label");
 count.id = "count";
 count.innerText = 0;
 cuenta.appendChild(count);
