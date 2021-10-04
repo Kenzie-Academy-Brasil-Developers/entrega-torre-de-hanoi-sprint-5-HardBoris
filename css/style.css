@@ -162,7 +162,7 @@ p {
     text-align: center;
 }
 
-/* @media (min-width : 769px){
+@media (min-width : 769px){
     h1 {
         font-size: 3em;
     }
@@ -179,4 +179,4 @@ p {
         font-size: .8em;
     }
 
-} */
+}

@@ -48,6 +48,7 @@ function mueveC() {
             fichaElegida = torreC.lastChild;
         } else if (fichaElegida.clientWidth < torreC.lastChild.clientWidth) {
             recibe(torreC);
+            victory(3);
         } else if (fichaElegida.clientWidth === torreC.lastChild.clientWidth) {
             mensaje.innerText = "escolha outra torre";
         } else if (fichaElegida.clientWidth > torreC.lastChild.clientWidth) {
@@ -58,7 +59,7 @@ function mueveC() {
     } else {
         recibe(torreC);
     }
-    contenidoC = document.getElementsByClassName("disco");
+    
 }
 
 function recibe(torre) {
