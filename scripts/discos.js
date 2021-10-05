@@ -56,7 +56,7 @@ function limpiaTorre(){
 }
 
 function movimientosMinimos(n) {
-    return minus = (2**n) - 1;
+    return (2**n) - 1;
 }
 
 level.addEventListener("click", iniciaJuego);
@@ -67,4 +67,5 @@ function iniciaJuego(event) {
     dibujaFichas(n);
     contenidoA = document.getElementsByClassName("disco");
     mini.innerText = movimientosMinimos(n);
+    cuentaMovida = 1;
 }

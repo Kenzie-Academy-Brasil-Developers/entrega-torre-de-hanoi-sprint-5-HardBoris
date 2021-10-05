@@ -43,13 +43,13 @@ const level0 = document.createElement("option");
 level0.innerText = "";
 level.appendChild(level0);
 
-const level1 = document.createElement("option");
-level1.innerText = "1";
-level.appendChild(level1);
+// const level1 = document.createElement("option");
+// level1.innerText = "1";
+// level.appendChild(level1);
 
-const level2 = document.createElement("option");
-level2.innerText = "2";
-level.appendChild(level2);
+// const level2 = document.createElement("option");
+// level2.innerText = "2";
+// level.appendChild(level2);
 
 const level3 = document.createElement("option");
 level3.innerText = "3";

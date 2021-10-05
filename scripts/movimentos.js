@@ -11,7 +11,8 @@ function mueveA() {
         } else if (fichaElegida.clientWidth === torreA.lastChild.clientWidth) {
             mensaje.innerText = "escolha outra torre";
         } else if (fichaElegida.clientWidth > torreA.lastChild.clientWidth) {
-            mensaje.innerText = "movimento ilegal!\nescolha outra torre";
+            mensaje.innerText = "movimento ilegal!\nescolha outra ficha";
+            fichaElegida = undefined;
         }
     } else if (fichaElegida === undefined) {
         mensaje.innerText = "deve escolher uma ficha";
@@ -31,7 +32,8 @@ function mueveB() {
         } else if (fichaElegida.clientWidth === torreB.lastChild.clientWidth) {
             mensaje.innerText = "escolha outra torre";
         } else if (fichaElegida.clientWidth > torreB.lastChild.clientWidth) {
-            mensaje.innerText = "movimento ilegal!\nescolha outra torre";
+            mensaje.innerText = "movimento ilegal!\nescolha outra ficha";
+            fichaElegida = undefined;
         }
     } else if (fichaElegida === undefined) {
         mensaje.innerText = "deve escolher uma ficha";
@@ -48,11 +50,12 @@ function mueveC() {
             fichaElegida = torreC.lastChild;
         } else if (fichaElegida.clientWidth < torreC.lastChild.clientWidth) {
             recibe(torreC);
-            victory(3);
+            victory(parseInt(level.value));
         } else if (fichaElegida.clientWidth === torreC.lastChild.clientWidth) {
             mensaje.innerText = "escolha outra torre";
         } else if (fichaElegida.clientWidth > torreC.lastChild.clientWidth) {
-            mensaje.innerText = "movimento ilegal!\nescolha outra torre";
+            mensaje.innerText = "movimento ilegal!\nescolha outra ficha";
+            fichaElegida = undefined;
         }
     } else if (fichaElegida === undefined) {
         mensaje.innerText = "deve escolher uma ficha";
